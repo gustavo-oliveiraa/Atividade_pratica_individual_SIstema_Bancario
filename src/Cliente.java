@@ -15,6 +15,7 @@ public class Cliente extends Thread{
         this.semaforo = semaforo;
     }
 
+    // Enquanto o cliente tiver saldo na conta:
     public void run() {
         Random random = new Random();
         while (conta.getSaldo() > 0) {
